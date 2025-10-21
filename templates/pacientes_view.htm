@@ -1,0 +1,599 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel pacientes view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_paciente_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_paciente}  r-vertical-field" data-fieldname="id_paciente" data-signal-error-for="id_paciente{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_paciente" data-fieldname="id_paciente" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_paciente}">
+		
+		{BEGIN id_paciente_label}{$label pacientes id_paciente }{END id_paciente_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_paciente_value}	</div>
+
+		
+</div>
+
+
+{END id_paciente_fieldblock}
+											
+{BEGIN tipo_documento_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tipo_documento}  r-vertical-field" data-fieldname="tipo_documento" data-signal-error-for="tipo_documento{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="tipo_documento" data-fieldname="tipo_documento" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tipo_documento}">
+		
+		{BEGIN tipo_documento_label}{$label pacientes tipo_documento }{END tipo_documento_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tipo_documento_value}	</div>
+
+		
+</div>
+
+
+{END tipo_documento_fieldblock}
+											
+{BEGIN identificacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_identificacion}  r-vertical-field" data-fieldname="identificacion" data-signal-error-for="identificacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="identificacion" data-fieldname="identificacion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_identificacion}">
+		
+		{BEGIN identificacion_label}{$label pacientes identificacion }{END identificacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$identificacion_value}	</div>
+
+		
+</div>
+
+
+{END identificacion_fieldblock}
+											
+{BEGIN primer_nombre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_primer_nombre}  r-vertical-field" data-fieldname="primer_nombre" data-signal-error-for="primer_nombre{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="primer_nombre" data-fieldname="primer_nombre" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_primer_nombre}">
+		
+		{BEGIN primer_nombre_label}{$label pacientes primer_nombre }{END primer_nombre_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$primer_nombre_value}	</div>
+
+		
+</div>
+
+
+{END primer_nombre_fieldblock}
+											
+{BEGIN segundo_nombre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_segundo_nombre}  r-vertical-field" data-fieldname="segundo_nombre" data-signal-error-for="segundo_nombre{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="segundo_nombre" data-fieldname="segundo_nombre" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_segundo_nombre}">
+		
+		{BEGIN segundo_nombre_label}{$label pacientes segundo_nombre }{END segundo_nombre_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$segundo_nombre_value}	</div>
+
+		
+</div>
+
+
+{END segundo_nombre_fieldblock}
+											
+{BEGIN primer_apellido_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_primer_apellido}  r-vertical-field" data-fieldname="primer_apellido" data-signal-error-for="primer_apellido{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="primer_apellido" data-fieldname="primer_apellido" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_primer_apellido}">
+		
+		{BEGIN primer_apellido_label}{$label pacientes primer_apellido }{END primer_apellido_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$primer_apellido_value}	</div>
+
+		
+</div>
+
+
+{END primer_apellido_fieldblock}
+											
+{BEGIN segundo_apellido_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_segundo_apellido}  r-vertical-field" data-fieldname="segundo_apellido" data-signal-error-for="segundo_apellido{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="segundo_apellido" data-fieldname="segundo_apellido" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_segundo_apellido}">
+		
+		{BEGIN segundo_apellido_label}{$label pacientes segundo_apellido }{END segundo_apellido_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$segundo_apellido_value}	</div>
+
+		
+</div>
+
+
+{END segundo_apellido_fieldblock}
+											
+{BEGIN nombre_completo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_completo}  r-vertical-field" data-fieldname="nombre_completo" data-signal-error-for="nombre_completo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="nombre_completo" data-fieldname="nombre_completo" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nombre_completo}">
+		
+		{BEGIN nombre_completo_label}{$label pacientes nombre_completo }{END nombre_completo_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nombre_completo_value}	</div>
+
+		
+</div>
+
+
+{END nombre_completo_fieldblock}
+											
+{BEGIN edad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_edad}  r-vertical-field" data-fieldname="edad" data-signal-error-for="edad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="edad" data-fieldname="edad" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_edad}">
+		
+		{BEGIN edad_label}{$label pacientes edad }{END edad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$edad_value}	</div>
+
+		
+</div>
+
+
+{END edad_fieldblock}
+											
+{BEGIN sexo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sexo}  r-vertical-field" data-fieldname="sexo" data-signal-error-for="sexo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="sexo" data-fieldname="sexo" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_sexo}">
+		
+		{BEGIN sexo_label}{$label pacientes sexo }{END sexo_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$sexo_value}	</div>
+
+		
+</div>
+
+
+{END sexo_fieldblock}
+											
+{BEGIN estado_civil_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado_civil}  r-vertical-field" data-fieldname="estado_civil" data-signal-error-for="estado_civil{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="estado_civil" data-fieldname="estado_civil" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_estado_civil}">
+		
+		{BEGIN estado_civil_label}{$label pacientes estado_civil }{END estado_civil_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$estado_civil_value}	</div>
+
+		
+</div>
+
+
+{END estado_civil_fieldblock}
+											
+{BEGIN telefono_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_telefono}  r-vertical-field" data-fieldname="telefono" data-signal-error-for="telefono{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="telefono" data-fieldname="telefono" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_telefono}">
+		
+		{BEGIN telefono_label}{$label pacientes telefono }{END telefono_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$telefono_value}	</div>
+
+		
+</div>
+
+
+{END telefono_fieldblock}
+											
+{BEGIN direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" data-fieldname="direccion" data-signal-error-for="direccion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="direccion" data-fieldname="direccion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_direccion}">
+		
+		{BEGIN direccion_label}{$label pacientes direccion }{END direccion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$direccion_value}	</div>
+
+		
+</div>
+
+
+{END direccion_fieldblock}
+											
+{BEGIN ciudad_mpio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ciudad_mpio}  r-vertical-field" data-fieldname="ciudad_mpio" data-signal-error-for="ciudad_mpio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="ciudad_mpio" data-fieldname="ciudad_mpio" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ciudad_mpio}">
+		
+		{BEGIN ciudad_mpio_label}{$label pacientes ciudad_mpio }{END ciudad_mpio_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ciudad_mpio_value}	</div>
+
+		
+</div>
+
+
+{END ciudad_mpio_fieldblock}
+											
+{BEGIN entidad_eapb_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entidad_eapb}  r-vertical-field" data-fieldname="entidad_eapb" data-signal-error-for="entidad_eapb{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="entidad_eapb" data-fieldname="entidad_eapb" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_entidad_eapb}">
+		
+		{BEGIN entidad_eapb_label}{$label pacientes entidad_eapb }{END entidad_eapb_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$entidad_eapb_value}	</div>
+
+		
+</div>
+
+
+{END entidad_eapb_fieldblock}
+											
+{BEGIN riesgo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_riesgo}  r-vertical-field" data-fieldname="riesgo" data-signal-error-for="riesgo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="riesgo" data-fieldname="riesgo" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_riesgo}">
+		
+		{BEGIN riesgo_label}{$label pacientes riesgo }{END riesgo_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$riesgo_value}	</div>
+
+		
+</div>
+
+
+{END riesgo_fieldblock}
+											
+{BEGIN cama_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cama}  r-vertical-field" data-fieldname="cama" data-signal-error-for="cama{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="cama" data-fieldname="cama" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cama}">
+		
+		{BEGIN cama_label}{$label pacientes cama }{END cama_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cama_value}	</div>
+
+		
+</div>
+
+
+{END cama_fieldblock}
+											
+{BEGIN servicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_servicio}  r-vertical-field" data-fieldname="servicio" data-signal-error-for="servicio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="servicio" data-fieldname="servicio" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_servicio}">
+		
+		{BEGIN servicio_label}{$label pacientes servicio }{END servicio_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$servicio_value}	</div>
+
+		
+</div>
+
+
+{END servicio_fieldblock}
+											
+{BEGIN motivo_consulta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_motivo_consulta}  r-vertical-field" data-fieldname="motivo_consulta" data-signal-error-for="motivo_consulta{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="motivo_consulta" data-fieldname="motivo_consulta" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_motivo_consulta}">
+		
+		{BEGIN motivo_consulta_label}{$label pacientes motivo_consulta }{END motivo_consulta_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$motivo_consulta_value}	</div>
+
+		
+</div>
+
+
+{END motivo_consulta_fieldblock}
+											
+{BEGIN turno_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_turno}  r-vertical-field" data-fieldname="turno" data-signal-error-for="turno{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="turno" data-fieldname="turno" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_turno}">
+		
+		{BEGIN turno_label}{$label pacientes turno }{END turno_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$turno_value}	</div>
+
+		
+</div>
+
+
+{END turno_fieldblock}
+											
+{BEGIN fecha_ingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_ingreso}  r-vertical-field" data-fieldname="fecha_ingreso" data-signal-error-for="fecha_ingreso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="fecha_ingreso" data-fieldname="fecha_ingreso" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_ingreso}">
+		
+		{BEGIN fecha_ingreso_label}{$label pacientes fecha_ingreso }{END fecha_ingreso_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_ingreso_value}	</div>
+
+		
+</div>
+
+
+{END fecha_ingreso_fieldblock}
+											
+{BEGIN creado_en_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_creado_en}  r-vertical-field" data-fieldname="creado_en" data-signal-error-for="creado_en{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="creado_en" data-fieldname="creado_en" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_creado_en}">
+		
+		{BEGIN creado_en_label}{$label pacientes creado_en }{END creado_en_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$creado_en_value}	</div>
+
+		
+</div>
+
+
+{END creado_en_fieldblock}
+											
+{BEGIN actualizado_en_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_actualizado_en}  r-vertical-field" data-fieldname="actualizado_en" data-signal-error-for="actualizado_en{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="actualizado_en" data-fieldname="actualizado_en" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_actualizado_en}">
+		
+		{BEGIN actualizado_en_label}{$label pacientes actualizado_en }{END actualizado_en_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$actualizado_en_value}	</div>
+
+		
+</div>
+
+
+{END actualizado_en_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Close window			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="pacientes_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,348 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel liquidos_eliminados search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_eliminado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_eliminado}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_eliminado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_eliminado" data-fieldname="id_eliminado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_eliminado}">
+		{$label liquidos_eliminados id_eliminado }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_eliminado}
+	</div>
+	<div class="r-search-field">
+		{$id_eliminado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_eliminado_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_eliminado_fieldblock}
+											
+{BEGIN paciente_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paciente_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="paciente_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="paciente_id" data-fieldname="paciente_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_paciente_id}">
+		{$label liquidos_eliminados paciente_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_paciente_id}
+	</div>
+	<div class="r-search-field">
+		{$paciente_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$paciente_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END paciente_id_fieldblock}
+											
+{BEGIN fecha_hora_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_hora}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="fecha_hora{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="fecha_hora" data-fieldname="fecha_hora" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_hora}">
+		{$label liquidos_eliminados fecha_hora }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_hora}
+	</div>
+	<div class="r-search-field">
+		{$fecha_hora_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_hora_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_hora_fieldblock}
+											
+{BEGIN hora_eliminado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hora_eliminado}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="hora_eliminado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="hora_eliminado" data-fieldname="hora_eliminado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_hora_eliminado}">
+		{$label liquidos_eliminados hora_eliminado }	</label>
+	<div class="r-search-option">
+		{$searchtype_hora_eliminado}
+	</div>
+	<div class="r-search-field">
+		{$hora_eliminado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$hora_eliminado_editcontrol1}
+	</div>
+	
+</div>
+
+{END hora_eliminado_fieldblock}
+											
+{BEGIN tipo_liquido_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tipo_liquido}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tipo_liquido{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="tipo_liquido" data-fieldname="tipo_liquido" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tipo_liquido}">
+		{$label liquidos_eliminados tipo_liquido }	</label>
+	<div class="r-search-option">
+		{$searchtype_tipo_liquido}
+	</div>
+	<div class="r-search-field">
+		{$tipo_liquido_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tipo_liquido_editcontrol1}
+	</div>
+	
+</div>
+
+{END tipo_liquido_fieldblock}
+											
+{BEGIN via_eliminacion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_via_eliminacion}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="via_eliminacion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="via_eliminacion" data-fieldname="via_eliminacion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_via_eliminacion}">
+		{$label liquidos_eliminados via_eliminacion }	</label>
+	<div class="r-search-option">
+		{$searchtype_via_eliminacion}
+	</div>
+	<div class="r-search-field">
+		{$via_eliminacion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$via_eliminacion_editcontrol1}
+	</div>
+	
+</div>
+
+{END via_eliminacion_fieldblock}
+											
+{BEGIN cantidad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cantidad}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cantidad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="cantidad" data-fieldname="cantidad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cantidad}">
+		{$label liquidos_eliminados cantidad }	</label>
+	<div class="r-search-option">
+		{$searchtype_cantidad}
+	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol1}
+	</div>
+	
+</div>
+
+{END cantidad_fieldblock}
+											
+{BEGIN caracteristicas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_caracteristicas}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="caracteristicas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="caracteristicas" data-fieldname="caracteristicas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_caracteristicas}">
+		{$label liquidos_eliminados caracteristicas }	</label>
+	<div class="r-search-option">
+		{$searchtype_caracteristicas}
+	</div>
+	<div class="r-search-field">
+		{$caracteristicas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$caracteristicas_editcontrol1}
+	</div>
+	
+</div>
+
+{END caracteristicas_fieldblock}
+											
+{BEGIN enfermero_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_enfermero}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="enfermero{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="enfermero" data-fieldname="enfermero" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_enfermero}">
+		{$label liquidos_eliminados enfermero }	</label>
+	<div class="r-search-option">
+		{$searchtype_enfermero}
+	</div>
+	<div class="r-search-field">
+		{$enfermero_editcontrol}	</div>
+	<div class="r-search-field">
+		{$enfermero_editcontrol1}
+	</div>
+	
+</div>
+
+{END enfermero_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

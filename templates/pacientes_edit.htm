@@ -1,0 +1,672 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel pacientes edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="pacientes_view.php?{$editlink}" {$view_page_button_attrs}>View</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tipo_documento_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tipo_documento}  r-vertical-field" 
+	data-signal-error-for="tipo_documento{$id}" {$required_attr_tipo_documento}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="tipo_documento" data-fieldname="tipo_documento" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tipo_documento}">
+		{BEGIN tipo_documento_label}{$label pacientes tipo_documento }{END tipo_documento_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tipo_documento_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tipo_documento" {$tooltipAttr pacientes tipo_documento } >
+		<div class="text-muted" >
+		{$tooltip pacientes tipo_documento }		</div>
+	</div>
+</div>
+
+
+{END tipo_documento_fieldblock}
+											
+{BEGIN identificacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_identificacion}  r-vertical-field" 
+	data-signal-error-for="identificacion{$id}" {$required_attr_identificacion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="identificacion" data-fieldname="identificacion" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_identificacion}">
+		{BEGIN identificacion_label}{$label pacientes identificacion }{END identificacion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$identificacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="identificacion" {$tooltipAttr pacientes identificacion } >
+		<div class="text-muted" >
+		{$tooltip pacientes identificacion }		</div>
+	</div>
+</div>
+
+
+{END identificacion_fieldblock}
+											
+{BEGIN primer_nombre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_primer_nombre}  r-vertical-field" 
+	data-signal-error-for="primer_nombre{$id}" {$required_attr_primer_nombre}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="primer_nombre" data-fieldname="primer_nombre" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_primer_nombre}">
+		{BEGIN primer_nombre_label}{$label pacientes primer_nombre }{END primer_nombre_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$primer_nombre_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="primer_nombre" {$tooltipAttr pacientes primer_nombre } >
+		<div class="text-muted" >
+		{$tooltip pacientes primer_nombre }		</div>
+	</div>
+</div>
+
+
+{END primer_nombre_fieldblock}
+											
+{BEGIN segundo_nombre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_segundo_nombre}  r-vertical-field" 
+	data-signal-error-for="segundo_nombre{$id}" {$required_attr_segundo_nombre}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="segundo_nombre" data-fieldname="segundo_nombre" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_segundo_nombre}">
+		{BEGIN segundo_nombre_label}{$label pacientes segundo_nombre }{END segundo_nombre_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$segundo_nombre_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="segundo_nombre" {$tooltipAttr pacientes segundo_nombre } >
+		<div class="text-muted" >
+		{$tooltip pacientes segundo_nombre }		</div>
+	</div>
+</div>
+
+
+{END segundo_nombre_fieldblock}
+											
+{BEGIN primer_apellido_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_primer_apellido}  r-vertical-field" 
+	data-signal-error-for="primer_apellido{$id}" {$required_attr_primer_apellido}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="primer_apellido" data-fieldname="primer_apellido" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_primer_apellido}">
+		{BEGIN primer_apellido_label}{$label pacientes primer_apellido }{END primer_apellido_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$primer_apellido_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="primer_apellido" {$tooltipAttr pacientes primer_apellido } >
+		<div class="text-muted" >
+		{$tooltip pacientes primer_apellido }		</div>
+	</div>
+</div>
+
+
+{END primer_apellido_fieldblock}
+											
+{BEGIN segundo_apellido_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_segundo_apellido}  r-vertical-field" 
+	data-signal-error-for="segundo_apellido{$id}" {$required_attr_segundo_apellido}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="segundo_apellido" data-fieldname="segundo_apellido" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_segundo_apellido}">
+		{BEGIN segundo_apellido_label}{$label pacientes segundo_apellido }{END segundo_apellido_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$segundo_apellido_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="segundo_apellido" {$tooltipAttr pacientes segundo_apellido } >
+		<div class="text-muted" >
+		{$tooltip pacientes segundo_apellido }		</div>
+	</div>
+</div>
+
+
+{END segundo_apellido_fieldblock}
+											
+{BEGIN nombre_completo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_completo}  r-vertical-field" 
+	data-signal-error-for="nombre_completo{$id}" {$required_attr_nombre_completo}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="nombre_completo" data-fieldname="nombre_completo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nombre_completo}">
+		{BEGIN nombre_completo_label}{$label pacientes nombre_completo }{END nombre_completo_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nombre_completo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nombre_completo" {$tooltipAttr pacientes nombre_completo } >
+		<div class="text-muted" >
+		{$tooltip pacientes nombre_completo }		</div>
+	</div>
+</div>
+
+
+{END nombre_completo_fieldblock}
+											
+{BEGIN edad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_edad}  r-vertical-field" 
+	data-signal-error-for="edad{$id}" {$required_attr_edad}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="edad" data-fieldname="edad" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_edad}">
+		{BEGIN edad_label}{$label pacientes edad }{END edad_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$edad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="edad" {$tooltipAttr pacientes edad } >
+		<div class="text-muted" >
+		{$tooltip pacientes edad }		</div>
+	</div>
+</div>
+
+
+{END edad_fieldblock}
+											
+{BEGIN sexo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sexo}  r-vertical-field" 
+	data-signal-error-for="sexo{$id}" {$required_attr_sexo}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="sexo" data-fieldname="sexo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sexo}">
+		{BEGIN sexo_label}{$label pacientes sexo }{END sexo_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sexo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sexo" {$tooltipAttr pacientes sexo } >
+		<div class="text-muted" >
+		{$tooltip pacientes sexo }		</div>
+	</div>
+</div>
+
+
+{END sexo_fieldblock}
+											
+{BEGIN estado_civil_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado_civil}  r-vertical-field" 
+	data-signal-error-for="estado_civil{$id}" {$required_attr_estado_civil}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="estado_civil" data-fieldname="estado_civil" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_estado_civil}">
+		{BEGIN estado_civil_label}{$label pacientes estado_civil }{END estado_civil_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$estado_civil_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="estado_civil" {$tooltipAttr pacientes estado_civil } >
+		<div class="text-muted" >
+		{$tooltip pacientes estado_civil }		</div>
+	</div>
+</div>
+
+
+{END estado_civil_fieldblock}
+											
+{BEGIN telefono_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_telefono}  r-vertical-field" 
+	data-signal-error-for="telefono{$id}" {$required_attr_telefono}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="telefono" data-fieldname="telefono" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_telefono}">
+		{BEGIN telefono_label}{$label pacientes telefono }{END telefono_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$telefono_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="telefono" {$tooltipAttr pacientes telefono } >
+		<div class="text-muted" >
+		{$tooltip pacientes telefono }		</div>
+	</div>
+</div>
+
+
+{END telefono_fieldblock}
+											
+{BEGIN direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" 
+	data-signal-error-for="direccion{$id}" {$required_attr_direccion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="direccion" data-fieldname="direccion" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_direccion}">
+		{BEGIN direccion_label}{$label pacientes direccion }{END direccion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$direccion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="direccion" {$tooltipAttr pacientes direccion } >
+		<div class="text-muted" >
+		{$tooltip pacientes direccion }		</div>
+	</div>
+</div>
+
+
+{END direccion_fieldblock}
+											
+{BEGIN ciudad_mpio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ciudad_mpio}  r-vertical-field" 
+	data-signal-error-for="ciudad_mpio{$id}" {$required_attr_ciudad_mpio}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="ciudad_mpio" data-fieldname="ciudad_mpio" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ciudad_mpio}">
+		{BEGIN ciudad_mpio_label}{$label pacientes ciudad_mpio }{END ciudad_mpio_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ciudad_mpio_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ciudad_mpio" {$tooltipAttr pacientes ciudad_mpio } >
+		<div class="text-muted" >
+		{$tooltip pacientes ciudad_mpio }		</div>
+	</div>
+</div>
+
+
+{END ciudad_mpio_fieldblock}
+											
+{BEGIN entidad_eapb_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_entidad_eapb}  r-vertical-field" 
+	data-signal-error-for="entidad_eapb{$id}" {$required_attr_entidad_eapb}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="entidad_eapb" data-fieldname="entidad_eapb" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_entidad_eapb}">
+		{BEGIN entidad_eapb_label}{$label pacientes entidad_eapb }{END entidad_eapb_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$entidad_eapb_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="entidad_eapb" {$tooltipAttr pacientes entidad_eapb } >
+		<div class="text-muted" >
+		{$tooltip pacientes entidad_eapb }		</div>
+	</div>
+</div>
+
+
+{END entidad_eapb_fieldblock}
+											
+{BEGIN riesgo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_riesgo}  r-vertical-field" 
+	data-signal-error-for="riesgo{$id}" {$required_attr_riesgo}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="riesgo" data-fieldname="riesgo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_riesgo}">
+		{BEGIN riesgo_label}{$label pacientes riesgo }{END riesgo_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$riesgo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="riesgo" {$tooltipAttr pacientes riesgo } >
+		<div class="text-muted" >
+		{$tooltip pacientes riesgo }		</div>
+	</div>
+</div>
+
+
+{END riesgo_fieldblock}
+											
+{BEGIN cama_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cama}  r-vertical-field" 
+	data-signal-error-for="cama{$id}" {$required_attr_cama}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="cama" data-fieldname="cama" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cama}">
+		{BEGIN cama_label}{$label pacientes cama }{END cama_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cama_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cama" {$tooltipAttr pacientes cama } >
+		<div class="text-muted" >
+		{$tooltip pacientes cama }		</div>
+	</div>
+</div>
+
+
+{END cama_fieldblock}
+											
+{BEGIN servicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_servicio}  r-vertical-field" 
+	data-signal-error-for="servicio{$id}" {$required_attr_servicio}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="servicio" data-fieldname="servicio" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_servicio}">
+		{BEGIN servicio_label}{$label pacientes servicio }{END servicio_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$servicio_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="servicio" {$tooltipAttr pacientes servicio } >
+		<div class="text-muted" >
+		{$tooltip pacientes servicio }		</div>
+	</div>
+</div>
+
+
+{END servicio_fieldblock}
+											
+{BEGIN motivo_consulta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_motivo_consulta}  r-vertical-field" 
+	data-signal-error-for="motivo_consulta{$id}" {$required_attr_motivo_consulta}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="motivo_consulta" data-fieldname="motivo_consulta" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_motivo_consulta}">
+		{BEGIN motivo_consulta_label}{$label pacientes motivo_consulta }{END motivo_consulta_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$motivo_consulta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="motivo_consulta" {$tooltipAttr pacientes motivo_consulta } >
+		<div class="text-muted" >
+		{$tooltip pacientes motivo_consulta }		</div>
+	</div>
+</div>
+
+
+{END motivo_consulta_fieldblock}
+											
+{BEGIN turno_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_turno}  r-vertical-field" 
+	data-signal-error-for="turno{$id}" {$required_attr_turno}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="turno" data-fieldname="turno" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_turno}">
+		{BEGIN turno_label}{$label pacientes turno }{END turno_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$turno_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="turno" {$tooltipAttr pacientes turno } >
+		<div class="text-muted" >
+		{$tooltip pacientes turno }		</div>
+	</div>
+</div>
+
+
+{END turno_fieldblock}
+											
+{BEGIN fecha_ingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_ingreso}  r-vertical-field" 
+	data-signal-error-for="fecha_ingreso{$id}" {$required_attr_fecha_ingreso}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="fecha_ingreso" data-fieldname="fecha_ingreso" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_fecha_ingreso}">
+		{BEGIN fecha_ingreso_label}{$label pacientes fecha_ingreso }{END fecha_ingreso_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$fecha_ingreso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fecha_ingreso" {$tooltipAttr pacientes fecha_ingreso } >
+		<div class="text-muted" >
+		{$tooltip pacientes fecha_ingreso }		</div>
+	</div>
+</div>
+
+
+{END fecha_ingreso_fieldblock}
+											
+{BEGIN creado_en_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_creado_en}  r-vertical-field" 
+	data-signal-error-for="creado_en{$id}" {$required_attr_creado_en}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="creado_en" data-fieldname="creado_en" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_creado_en}">
+		{BEGIN creado_en_label}{$label pacientes creado_en }{END creado_en_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$creado_en_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="creado_en" {$tooltipAttr pacientes creado_en } >
+		<div class="text-muted" >
+		{$tooltip pacientes creado_en }		</div>
+	</div>
+</div>
+
+
+{END creado_en_fieldblock}
+											
+{BEGIN actualizado_en_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_actualizado_en}  r-vertical-field" 
+	data-signal-error-for="actualizado_en{$id}" {$required_attr_actualizado_en}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="actualizado_en" data-fieldname="actualizado_en" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_actualizado_en}">
+		{BEGIN actualizado_en_label}{$label pacientes actualizado_en }{END actualizado_en_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$actualizado_en_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="actualizado_en" {$tooltipAttr pacientes actualizado_en } >
+		<div class="text-muted" >
+		{$tooltip pacientes actualizado_en }		</div>
+	</div>
+</div>
+
+
+{END actualizado_en_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Save			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancel			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reset		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="pacientes_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		View		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
